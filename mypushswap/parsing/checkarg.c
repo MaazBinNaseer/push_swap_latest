@@ -92,6 +92,6 @@ void	refactor_ac(t_stack *a, t_stack *b, char **av)
 void	parsearg(t_stack *a, t_stack *b, char **av)
 {
 	refactor_ac(a, b, av);
-	is_sorted(a, b);
+	is_sorted(a);
 	is_dup(a, b);
 }

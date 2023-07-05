@@ -29,7 +29,7 @@ LIBFT	= ./libft/libft.a
 
 FT_PRINTF = ./ft_printf/libftprintf.a
 
-CFLAGS	= -Wall -Wextra -Werror
+CFLAGS	= -Wall -Wextra -Werror -g
 
 all:	$(NAME)
 

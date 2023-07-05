@@ -62,24 +62,24 @@ void	sign_check2(char *str, t_stack *a, t_stack *b, char **new_av)
 	}
 }
 
-void	is_sorted(t_stack *a, t_stack *b)
+void	is_sorted(t_stack *a)
 {
 	int	i;
 
 	i = 0;
-	while (a->data[i])
+	while (i < a->size - 1) // ensure i + 1 is always a valid index
 	{
 		if (a->data[i] < a->data[i + 1])
 		{
 			i++;
 		}
 		else
-			break ;
+			break;
 	}
 	if (i == a->size)
 	{
 		free (a->data);
-		free (b->data);
+		// free (b->data);
 		exit(EXIT_SUCCESS);
 	}
 }

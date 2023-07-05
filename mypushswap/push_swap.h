@@ -67,7 +67,7 @@ void		free_data(t_stack *a, t_stack *b, int flag);
 void		swap(int *a, int *b);
 int			ps_atoi(char *str, t_stack *a, t_stack *b, char **new_av);
 void		is_dup(t_stack *a, t_stack *b);
-void		is_sorted(t_stack *a, t_stack *b);
+void		is_sorted(t_stack *a);
 void		sign_check2(char *str, t_stack *a, t_stack *b, char **new_av);
 void		sign_check(char *str, t_stack *a, t_stack *b, char **new_av);
 void		refactor_ac(t_stack *a, t_stack *b, char **av);
